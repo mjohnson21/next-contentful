@@ -7,12 +7,12 @@ I recently started a client prototype, and really liked the stack. Once everythi
 Here are the major steps that I want to recreate. 
 
 * [x] [Next JS](./docs/1_next.md)
-* [ ] ESLint
-* [ ] Apollo Client
-* [ ] Material UI
+* [x] [ESLint, Jest, Directory Aliasing](./docs/2_eslint.md)
+* [ ] [Apollo Client](./docs/3_apollo.md)
 * [ ] Serverless
-* [ ] Plop
 * [ ] Storybook
+* [ ] Plop
+* [ ] Material UI
 
 
 
