@@ -62,4 +62,6 @@ module.exports = {
 }
 ```
 
+At this point we also should add `.serverless` to our `.gitignore`.
+
 NOTE: I've yet to figure out how to get to the bucket via the AWS console. 
