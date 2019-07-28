@@ -1,10 +1,8 @@
-import Example from '@components/example/index'
+import Box from '@material-ui/core/Box'
 
 function Home() {
   return (
-    <div>
-      <Example />
-    </div>
+    <Box p={4} bgcolor="primary.light">test</Box>
   )
 }
 
