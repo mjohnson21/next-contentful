@@ -9,8 +9,8 @@ storiesOf('Header', module)
   .addDecorator(withKnobs)
   .addParameters({ readme: { sidebar: ReadMe } })
   .add('with knobs', () => {
-    const headline = text('headline', 'Fore!')
+    const title = text('title', 'Title')
     return (
-      <Header headline={headline} />
+      <Header title={title} />
     )
   })

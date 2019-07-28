@@ -9,7 +9,7 @@ storiesOf('{{pascalCase name}}', module)
   .addDecorator(withKnobs)
   .addParameters({ readme: { sidebar: ReadMe } })
   .add('with knobs', () => {
-    const headline = text('headline', 'Fore!')
+    const headline = text('headline', 'Default')
     return (
       <{{pascalCase name}} headline={headline} />
     )
