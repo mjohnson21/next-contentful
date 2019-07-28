@@ -9,7 +9,7 @@ const Shell = (props) => {
 
   return (
     <ShellRoot>
-      <Header />
+      <Header title="App Name" />
       {children}
     </ShellRoot>
   )
@@ -18,7 +18,5 @@ const Shell = (props) => {
 Shell.propTypes = {
   children: PropTypes.any,
 }
-
-Shell.defaultProps = {}
 
 export default Shell
