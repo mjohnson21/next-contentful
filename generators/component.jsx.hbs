@@ -1,0 +1,22 @@
+import PropTypes from 'prop-types'
+import { {{pascalCase name}}Root } from './{{dashCase name}}.styles'
+
+const {{pascalCase name}} = (props) => {
+  const {
+    headline,
+  } = props
+
+  return (
+    <{{pascalCase name}}Root>
+      {{pascalCase name}}: {headline}
+    </{{pascalCase name}}Root>
+  )
+}
+
+{{pascalCase name}}.propTypes = {
+  headline: PropTypes.string,
+}
+
+{{pascalCase name}}.defaultProps = {}
+
+export default {{pascalCase name}}

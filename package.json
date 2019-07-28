@@ -10,6 +10,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "generate": "plop --plopfile ./generators/plopfile.js",
     "pretest": "./node_modules/.bin/eslint --ignore-path .eslintignore . --fix",
     "test": "jest"
   },
@@ -30,6 +31,7 @@
     "graphql": "^14.4.2",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.0.2",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-apollo": "^2.5.8",
     "react-dom": "^16.8.6"
@@ -45,6 +47,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "jest": "^24.8.0",
+    "plop": "^2.4.0",
     "serverless": "^1.48.4",
     "serverless-nextjs-plugin": "^2.3.0",
     "serverless-offline": "^5.8.0"

@@ -1,0 +1,30 @@
+import gql from 'graphql-tag'
+import { Query } from 'react-apollo'
+import LinearProgress from '@material-ui/core/LinearProgress'
+import Error from '@components/error'
+import {{pascalCase componentName}} from './{{dashCase componentName}}'
+
+const QUERY = gql`
+query {{pascalCase queryName}}{{#if queryId}}($id: String!){{/if}} {
+  {{queryName}}{{#if queryId}}(id: $id){{/if}} {
+    headline
+  }
+}
+`
+
+export default function {{pascalCase componentName}}WithData(props) {
+  return (
+    <Query query={QUERY} {{#if queryId}}variables={props}{{/if}}>
+      {({
+        loading, error, data,
+      }) => {
+        if (error) return <Error error={error} />
+        if (loading) return <LinearProgress color="secondary" />
+        const response = data.{{queryName}}
+        return (
+          <{{pascalCase componentName}} {...props} {...response} />
+        )
+      }}
+    </Query>
+  )
+}
