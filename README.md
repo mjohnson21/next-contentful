@@ -8,7 +8,7 @@ Here are the major steps that I want to recreate.
 
 * [x] [Next JS](./docs/1_next.md)
 * [x] [ESLint, Jest, Directory Aliasing](./docs/2_eslint.md)
-* [ ] [Apollo Client](./docs/3_apollo.md)
+* [x] [Apollo Client](./docs/3_apollo.md)
 * [ ] Serverless
 * [ ] Storybook
 * [ ] Plop

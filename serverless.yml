@@ -1,0 +1,17 @@
+service: next-starter
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 512
+
+plugins:
+  - serverless-nextjs-plugin
+  - serverless-offline
+
+package:
+  exclude:
+    - ./**
+
+custom:
+  serverless-nextjs: {}

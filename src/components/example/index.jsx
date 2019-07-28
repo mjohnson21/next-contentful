@@ -1,6 +1,7 @@
 function Example() {
+  // console.log(process.env)
   return (
-    <div>Example Component</div>
+    <div>Example Component Updated</div>
   )
 }
 
