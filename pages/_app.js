@@ -5,7 +5,7 @@ import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Shell from '@components/shell'
 import withApolloClient from '../src/lib/with-apollo-client'
-import theme from '../src/lib/theme'
+import theme from '../src/config/theme'
 
 class MyApp extends App {
   componentDidMount() {
@@ -17,6 +17,7 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps, apolloClient } = this.props
+
     return (
       <Container>
         <ApolloProvider client={apolloClient}>

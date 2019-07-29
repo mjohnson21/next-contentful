@@ -14,7 +14,7 @@ So let's get started. Like Next's `/examples` directly, Material UI has the info
 yarn add @material-ui/styles @material-ui/core
 ```
 
-Much of Material's magic comes from the the theme, so let's start there by creating `src/lib/theme.js`.
+Much of Material's magic comes from the the theme, so let's start there by creating `src/config/theme.js`.
 
 ```
 import { createMuiTheme } from '@material-ui/core/styles'
@@ -43,7 +43,7 @@ Next, we'll need to get our application wrappedin the ThemeProvider component, w
 // add the imports
 import { ThemeProvider } from '@material-ui/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
-import theme from '../src/lib/theme'
+import theme from '../src/config/theme'
 
 // wrap our component return with ThemeProvider and CssBaseline
 <ThemeProvider theme={theme}>

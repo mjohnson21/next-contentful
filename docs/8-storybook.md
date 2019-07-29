@@ -29,7 +29,7 @@ import { configure, addDecorator, addParameters } from '@storybook/react'
 import { themes, create } from '@storybook/theming'
 import { addReadme } from 'storybook-readme'
 import { ThemeProvider } from '@material-ui/styles'
-import themeMUI from '../src/lib/theme'
+import themeMUI from '../src/config/theme'
 
 const theme = create({
   brandTitle: 'Next Starter'
