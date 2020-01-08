@@ -1,7 +1,11 @@
-import { styled } from '@material-ui/styles'
+import { makeStyles } from '@material-ui/styles'
 
-export const {{pascalCase name}}Root = styled('div')(({ theme }) => ({
-  background: theme.palette.grey[100],
-  color: theme.palette.secondary.main,
-  padding: theme.spacing(4),
+const useStyles = makeStyles(theme => ({
+  root: {
+    background: theme.palette.grey[100],
+    color: theme.palette.secondary.main,
+    padding: theme.spacing(4),
+  },
 }))
+
+export default useStyles

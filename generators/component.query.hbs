@@ -2,7 +2,7 @@ import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 import LinearProgress from '@material-ui/core/LinearProgress'
 import Error from '@components/error'
-import {{pascalCase componentName}} from './{{dashCase componentName}}'
+import {{pascalCase name}} from './{{dashCase name}}'
 
 const QUERY = gql`
 query {{pascalCase queryName}}{{#if queryId}}($id: String!){{/if}} {
@@ -12,17 +12,17 @@ query {{pascalCase queryName}}{{#if queryId}}($id: String!){{/if}} {
 }
 `
 
-export default function {{pascalCase componentName}}WithData(props) {
+export default function {{pascalCase name}}WithData(props) {
   return (
-    <Query query={QUERY} {{#if queryId}}variables={props}{{/if}}>
+    <Query query={QUERY}{{#if queryId}} variables={props}{{/if}}>
       {({
         loading, error, data,
       }) => {
         if (error) return <Error error={error} />
         if (loading) return <LinearProgress color="secondary" />
-        const response = data.{{queryName}}
+        const response = data.{{#if queryName}}{{queryName}}{{else}}{{pascalCase name}}{{/if}}
         return (
-          <{{pascalCase componentName}} {...props} {...response} />
+          <{{pascalCase name}} {...props} {...response} />
         )
       }}
     </Query>

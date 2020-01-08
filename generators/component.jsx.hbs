@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types'
-import { {{pascalCase name}}Root } from './{{dashCase name}}.styles'
+import useStyles from './{{dashCase name}}.styles'
 
 const {{pascalCase name}} = (props) => {
   const {
     headline,
   } = props
+  const styles = useStyles()
 
   return (
-    <{{pascalCase name}}Root>
+    <div className={styles.root}>
       {{pascalCase name}}: {headline}
-    </{{pascalCase name}}Root>
+    </div>
   )
 }
 
